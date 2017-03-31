@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+  background-color: whitesmoke;
+  height: 5000px;
+}
+.feed{
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+}
+.body{
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;	
+	align-items: center;	
+}
+.flex-item{
+  -webkit-flex: 1;
+          flex: 1;
+	color: lightgrey;
+	
+}
+.card{
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	border: 2px lightgrey;
+    border-radius: 10px;
+
+	background-color: white;
+	height: 600px;
+	width: 500px;
+	margin: 25px;
+}
+.comments{
+	width: 100%;
+	height: 150px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	background-color: white;
+}
+.image{
+	width: 100%;
+	height: 300px;
+	background-color: white;
+	border-radius: 5px;
+}
+.img_author{
+	width: 80px;
+	height: 80px;
+	background-color: cornflowerblue;
+}
+.count{
+	width: 100%;
+	height: 40px;
+	background-color: lightgrey;
+	border-radius: 5px;
+	margin-top: 10px;
+}
