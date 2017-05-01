@@ -1,22 +1,29 @@
 const posts = [
 	{
-		title: 'My Post',
+		title: '#MyGarden',
+		author: 'Amber',
+		imgUrl: 'http://mybeadingstudio.com/assets/cards_006.jpg'
+	},
+	{
+		title: '#MyGarden',
 		author: 'Belle',
-		content: 'Life is good',
-		imgUrl: 'http://mybeadingstudio.com/assets/img_portfolio_headshot.jpg'
+		imgUrl: 'http://mybeadingstudio.com/assets/cards_002.jpg'
 	},
 	{
-		title: 'My Post',
-		author: 'Louis',
-		content: 'Life is better',
-		imgUrl: ''
+		title: '#MyGarden',
+		author: 'Cindy',
+		imgUrl: 'http://mybeadingstudio.com/assets/cards_003.jpg'
 	},
 	{
-		title: 'My Post',
-		author: 'Steven',
-		content: 'Life is wonderful',
-		imgUrl: ''
-	}
+		title: '#MyGarden',
+		author: 'Daisy',
+		imgUrl: 'http://mybeadingstudio.com/assets/cards_004.jpg'
+	},
+	{
+		title: '#MyGarden',
+		author: 'Emily',
+		imgUrl: 'http://mybeadingstudio.com/assets/cards_005.jpg'
+	}	
 ];
 import React, { Component } from 'react';
 import Card from './Card';
@@ -26,10 +33,7 @@ export default class Body extends Component{
 	render(){
 		return (
 			<div className="body">
-			{ posts.map(
-				(post)=>{
-					return (<Card title={post.title} author={post.author} content={post.content} imgUrl={post.imgUrl} />);
-				}) }
+			{ posts.map((post)=>{return (<Card title={post.title} author={post.author} imgUrl={post.imgUrl} />);}) }
 			</div>
 		);
 	}
