@@ -51,7 +51,7 @@ export default class CommentBox extends Component{
 			<div className="commentbox">
 			{ this.overflowAlert() }
 				<textarea placeholder="Comment:" className="form-control" onChange={this.handleChange}></textarea><br />
-				<span>Capacity (in characters): { this.remainingCharacters() }</span>
+				<span>{ this.remainingCharacters() } characters remaining</span>
 				<button className="button big-btn" onClick={ this.togglePhoto }>{ this.state.photoAdded ? " Photo Added " : " Add Photo "}</button>
 				<button className="button big-btn" disabled={ this.remainingCharacters() === 200 }>Comment</button>
 			</div>
